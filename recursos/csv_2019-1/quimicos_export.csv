@@ -1,0 +1,422 @@
+codQuimico,elemento,unidadMedida,tipo,min,max,intervalo
+1,"Agujas entomológicas # 1 ","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+2,"Agujas entomológicas # 2 ","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+3,"Agujas n°18 ","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+4,"Agujas n°20","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+5,Algodón,Gramo,"MATERIALES DE LABORATORIO",0.50,2.00,0.50
+6,"Algodón hidrófilo ",Gramo,"MATERIALES DE LABORATORIO",0.50,2.00,0.50
+7,"Asas de siembra con mango de kolle (metaloop) ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+8,"Baguetas ",Unidad,"MATERIALES DE LABORATORIO",1.00,10.00,1.00
+9,"Balón de fondo plano de 1 litro ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+10,"Balón de fondo plano de 500ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+11,"Beaker / vaso de precipitación 10 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+12,"Beaker / vaso de precipitación 100 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+13,"Beaker / vaso de precipitación 1000 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+14,"Beaker / vaso de precipitación 25 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+15,"Beaker / vaso de precipitación 250 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+16,"Beaker / vaso de precipitación 50 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+17,"Beaker / vaso de precipitación 500 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+18,"Beaker / vaso de precipitación 600 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+19,"Buretas de 25 ml  ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+20,"Cámara neubauer ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+21,"Chupones para pipetas Pasteur",Unidad,"MATERIALES DE LABORATORIO",1.00,2.00,1.00
+22,"Cinta de ph en tiras","Rollo de 70 unid","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+23,"Crioviales con tapa rosca 1.0ml",Unidad,"MATERIALES DE LABORATORIO",1.00,2.00,1.00
+24,"Crioviales con tapa rosca 2.0ml","Bolsa x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+25,"Crioviales con tapa rosca 4.0ml","Bolsa x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+26,"Crioviales con tapa rosca 5.0ml ","Bolsa x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+27,"Embudo de vidrio  ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+28,"Embudo de vidrio con vástago largo ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+29,"Embudo de vidrio de 100mm de diámetro ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+30,"Embudo de vidrio de 150mm de diámetro",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+31,"Embudo de vidrio de 50mm de diámetro",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+32,"Embudo de vidrio de 55mm de diámetro",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+33,"Embudo de vidrio de 80mm de diámetro",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+34,"Erlemeyer o matraz 100 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+35,"Erlemeyer o matraz 1000 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+36,"Erlemeyer o matraz 25 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+37,"Erlemeyer o matraz 250 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+38,"Erlemeyer o matraz 50 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+39,"Erlemeyer o matraz 500 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+40,"Erlemeyer o matraz 5000 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+41,"Escobilla para matraz ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+42,"Escobilla para pipetas 05 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+43,"Escobilla para pipetas 10 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+44,"Escobilla para pipetas 1ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+45,"Escobilla para probetas ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+46,"Escobilla para tubos 10 x 75",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+47,"Escobilla para tubos 13 x 100",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+48,"Escobilla para tubos 15 x 125",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+49,"Escobilla para tubos 16 x 150",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+50,Esparadrapo,"Caja 1x10ydasx12cortes","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+51,"Espátula de acero para pesos gruesos",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+52,"Espátula de acero para pesos livianos",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+53,"Espátula de drigalsky",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+54,"Filtros de membrana de nitrocelulosa",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+55,"Frasco de vidrio de 1000ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+56,"Frasco de vidrio de 250ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+57,"Frasco de vidrio de 500ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+58,"Frasco goteros de 100 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+59,"Frasco tapa rosca de 250 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+60,"Gotero de plástico ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+61,"Gotero de vidrio",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+62,"Gradilla ","Unidad x 48 hoyos","MATERIALES DE LABORATORIO",1.00,10.00,1.00
+63,"Guantes de jebe talla L ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+64,"Guantes de jebe talla M ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+65,"Guantes de jebe talla S ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+66,"Guantes de látex talla L ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+67,"Guantes de látex talla M ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+68,"Guantes de látex talla S ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+69,"Guantes de nitrilo talla L ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+70,"Guantes de nitrilo talla M ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+71,"Guantes de nitrilo talla S ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+72,"Guantes quirúrgicos talla L ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+73,"Guantes quirúrgicos talla M ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+74,"Guantes quirúrgicos talla S ",Par,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+75,"Hisopo con mango largo de madera ","Bolsa x 100","MATERIALES DE LABORATORIO",1.00,3.00,1.00
+76,"Hoja de bisturí n°11  ","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+77,"Indicador de PH panpha (4-12)","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+78,"Jabón líquido",Litro,"MATERIALES DE LABORATORIO",1.00,3.00,1.00
+79,"Jeringa de tuberculina estériles ","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+80,"Jeringa de vidrio 50 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,20.00,1.00
+81,"Jeringas estériles x 10ml-descartables","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+82,"Jeringas estériles x 5ml-descartables","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+83,"Kitasato de 500 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,3.00,1.00
+84,"Lamina cubreobjetos (22x22)  ","Caja x 100","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+85,"Lamina excavadas de 12 pocillos ",Unidad,"MATERIALES DE LABORATORIO",1.00,20.00,1.00
+86,"Laminas portaobjeto","Caja x 50","MATERIALES DE LABORATORIO",1.00,3.00,1.00
+87,"Ligaduras para sangría",Unidad,"MATERIALES DE LABORATORIO",1.00,10.00,1.00
+88,"Luna de reloj ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+89,"Mango de bisturí n° 4 ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+90,"Marcadores de vidrio",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+91,"Mascarillas ","Caja x 50","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+92,"Matraz erlenmeyer de 125 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+93,"Matraz tipo balón de 500 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+94,"Mechero de alcohol",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+95,"Micro tubos de  1.5 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+96,"Micropipeta automática 0.1-10 µl",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+97,"Micropipeta automática 0.1-2 µl",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+98,"Micropipeta automática 100-1000 µl",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+99,"Micropipeta automática 10-100 µl",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+100,"Micropipeta automática 20-200 µl",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+101,"Mortero de porcelana con pilon de 80mm",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+102,"Papel aluminio ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+103,"Papel craft",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+104,"Papel filtro (paso lento)  ","Caja x 100","MATERIALES DE LABORATORIO",1.00,3.00,1.00
+105,"Papel filtro (paso rápido) ","Caja x 100","MATERIALES DE LABORATORIO",1.00,3.00,1.00
+106,"Papel filtro Whatman nº 1 ","Caja x 100 ","MATERIALES DE LABORATORIO",1.00,3.00,1.00
+107,"Papel Kraft",Unidad,"MATERIALES DE LABORATORIO",1.00,10.00,1.00
+108,"Papel lente ","Block x 100","MATERIALES DE LABORATORIO",1.00,5.00,1.00
+109,"Parafilm ",Rollos,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+110,"Pinza de madera",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+111,"Pinza de Mohr",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+112,"Pinza de punta plana 20 cm ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+113,"Pinza de relojero punta fina ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+114,"Pinza dientes de ratón",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+115,"Pinza hemostática ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+116,"Pipeta de 01 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+117,"Pipeta de 02 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+118,"Pipeta de 05 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+119,"Pipeta de 10 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+120,"Pipeta Pasteur plástico",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+121,"Pipeta Pasteur vidrio ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+122,"Pipetas serológicas graduadas 1 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+123,"Pipetas serológicas graduadas 10 ml",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+124,"Pipetas serológicas graduadas 5 ml  ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+125,"Pisceta 250 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+126,"Pisceta 500 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+127,"Placa de toques de porcelana 12 cavidades",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+128,"Placas petri plástico 15 x 100 mm ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+129,"Placas petri plástico 150 x 30 mm ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+130,"Placas petri vidrio 10 x 100 mm ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+131,"Placas petri vidrio 15 x 100 mm ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+132,"Placas petri vidrio 150 x 30 mm",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+133,"Probeta graduada de 10 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+134,"Probeta graduada de 100 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+135,"Probeta graduada de 1000 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+136,"Probeta graduada de 250 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+137,"Probeta graduada de 50 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+138,"Probeta graduada de 500 ml ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+139,"Propipetas ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+140,"Puntas amarillas (bolsa x 1000 u)","Bolsa x 1000","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+141,"Puntas azules )","Bolsa x 500","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+142,"Puntas blancas 10 ul ()","Bolsa x 1000","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+143,"Puntas descartables para micropipetas (20-200 µl) ","Bolsa x 1000","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+144,"Termometros (-10 +110 ºc) ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+145,"Tijera de punta fina","Unidad ","MATERIALES DE LABORATORIO",1.00,5.00,1.00
+146,"Tijera de punta recta ",Unidad,"MATERIALES DE LABORATORIO",1.00,5.00,1.00
+147,"Tips 10 µl ","Bolsa x 1000","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+148,"Tips 1000 µl","Bolsa x 1000","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+149,"Tips 200 µl ","Bolsa x 500","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+150,"Tubo de ensayo 10x65 mm ",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+151,"Tubo de ensayo 10x75 mm",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+152,"Tubo de ensayo 12x75 mm",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+153,"Tubo de ensayo 13x100 mm",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+154,"Tubo de ensayo 15x125 mm",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+155,"Tubo de ensayo 15x75 mm",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+156,"Tubo de ensayo 16x150 mm",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+157,"Tubo de ensayo 22x150 mm ",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+158,"Tubo de ensayo cónico descartable de 15ml con tapa rosca ","Bolsa x 50","MATERIALES DE LABORATORIO",1.00,50.00,1.00
+159,"Tubo de ensayo cónicos descartable de 50ml con tapa rosca ","Racks x 25 ","MATERIALES DE LABORATORIO",1.00,50.00,1.00
+160,"Tubos de 13x100 mm con tapa de rosca  ",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+161,"Tubos de 16x150 mm con tapa rosca ",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+162,"Tubos de 16x150mm con tapa rosca",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+163,"Tubos de centrífuga 1 (5ml) ",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+164,"Tubos durham",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+165,"Tubos eppendorf de 1.5ml","Bolsa x 500","MATERIALES DE LABORATORIO",1.00,2.00,1.00
+166,"Vial con tapa rosca",Unidad,"MATERIALES DE LABORATORIO",1.00,50.00,1.00
+167,"Aceite de inmersión",Mililitro,"REACTIVOS QUIMICOS",1.00,50.00,1.00
+168,"Acetamida ",Gramo,"REACTIVOS QUIMICOS",1.00,100.00,1.00
+169,"Acetato de etilo - BF.SUNAT",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+170,"Acetato de plomo",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+171,"Acetato de sodio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+172,"Acetona - BF.SUNAT",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+173,"Ácido  3 indol acético (AIA) ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+174,"Ácido  bórico ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+175,"Ácido  láctico ",Mililitro,"REACTIVOS QUIMICOS",1.00,100.00,1.00
+176,"Ácido  nalidixidico ",Miligramo,"REACTIVOS QUIMICOS",1.00,20.00,1.00
+177,"Ácido  oxalico ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+178,"Ácido  periódico ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+179,"Ácido  pícrico (en polvo) ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+180,"Ácido  propionico",Mililitro,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+181,"Ácido acético glacial ",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+182,"Ácido clorhídrico - BF.SUNAT",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+183,"Ácido nítrico - BF.SUNAT",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+184,"Ácido pícrico ",Mililitro,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+185,"Ácido pirogálico ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+186,"Ácido sulfúrico - BF.SUNAT",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+187,"Ácido tánico ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+188,"Adenina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+189,"Agar anaeróbico de brewer ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+190,"Agar baird parker ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+191,"Agar base para sangre ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+192,"Agar base urea ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+193,"Agar BHI / agar infusión cerebro corazón",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+194,"Agar bilis esculina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+195,"Agar cetrimide ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+196,"Agar citrato de simmons ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+197,"Agar czapek",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+198,"Agar DNA ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+199,"Agar EMB / agar eosina azul de metileno ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+200,"Agar LIA / agar lisina hierro ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+201,"Agar Mac Conkey ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+202,"Agar manitol salado  ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+203,"Agar Mann Rogosa Sharpe ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+204,"Agar Muller Hinton ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+205,"Agar noble ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+206,"Agar nutritivo ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+207,"Agar papa dextrosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+208,"Agar plate count ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+209,"Agar sabouraud glucosado ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+210,"Agar selectivo para b. Cereus ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+211,"Agar SIM ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+212,"Agar SPS ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+213,"Agar SS / agar salmonella shigella  ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+214,"Agar sulfito de bismuto ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+215,"Agar TCBS ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+216,"Agar tributirina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+217,"Agar tripticasa soya o tsa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+218,"Agar TSI ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+219,"Agar VRBA ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+220,"Agar XLD ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+221,"Agarosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+222,"Agarosa tipo III (electroforesis adn) ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+223,"Agua destilada ",Litro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+224,"Agua ultrapura ",Litro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+225,"Alcohol acetona",Litro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+226,"Alcohol amílico ",Mililitro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+227,"Alcohol corriente / alcohol etílico 96o ",Litro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+228,"Alcohol etílico 70º ",Litro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+229,"Alcohol etílico absoluto / etanol  absoluto ",Litro,"REACTIVOS QUIMICOS",1.00,15.00,1.00
+230,"Alcohol isoamilico ",Litro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+231,"Alcohol isopropilico ",Litro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+232,"Alcohol metílico / metanol absoluto- bf. Produce",Mililitro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+233,"Almidón soluble ",Mililitro,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+234,"Aminoácido  hipoxantina    ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+235,"Aminoácido alanina    ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+236,"Aminoácido arginina    ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+237,"Aminoácido leucina    ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+238,"Aminoácido prolina    ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+239,"Aminoácido treonina    ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+240,"Aminoácido valina    ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+241,"Ampicilina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+242,"Anaranjado de metilo ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+243,"Antibiótico (en discos de sensibilidad) ácido nalidíxico  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+244,"Antibiótico (en discos de sensibilidad) amoxicilina  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+245,"Antibiótico (en discos de sensibilidad) amoxicilina-ac. Clavulánico  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+246,"Antibiótico (en discos de sensibilidad) ampicilina  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+247,"Antibiótico (en discos de sensibilidad) ceftazidima  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+248,"Antibiótico (en discos de sensibilidad) ceftazidima-ac. Clavulánico  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+249,"Antibiótico (en discos de sensibilidad) ceftriaxona  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+250,"Antibiótico (en discos de sensibilidad) ceftriaxona-ac. Clavulánico  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+251,"Antibiótico (en discos de sensibilidad) cloramfenicol  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+252,"Antibiótico (en discos de sensibilidad) eritromicina  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+253,"Antibiótico (en discos de sensibilidad) estreptomicina  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+254,"Antibiótico (en discos de sensibilidad) furazolidona  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+255,"Antibiótico (en discos de sensibilidad) gentamicina  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+256,"Antibiótico (en discos de sensibilidad) novobiocina  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+257,"Antibiótico (en discos de sensibilidad) optoquina  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+258,"Antibiótico (en discos de sensibilidad) penicilina  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+259,"Antibiótico (en discos de sensibilidad) vancomicina  ","Frasco x 50 unidades","REACTIVOS QUIMICOS",1.00,4.00,1.00
+260,Antrona,Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+261,"Arabinosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+262,"Asparagina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+263,"Azida de sodio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+264,"Azul brillante de coomasie ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+265,"Azul de bromotimol ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+266,"Azul de lactofenol ",Mililitro,"REACTIVOS QUIMICOS",1.00,100.00,1.00
+267,"Azul de metileno ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+268,"Azul de toluidina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+269,"Azul de tripan ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+270,"Bálsamo de canada ",Mililitro,"REACTIVOS QUIMICOS",1.00,500.00,1.00
+271,"Bicarbonato de sodio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+272,"Bis-acrilamida ",Mililitro,"REACTIVOS QUIMICOS",1.00,250.00,1.00
+273,"Caldo azida glucosa  ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+274,"Caldo BHI / caldo infusión cerebro corazón ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+275,"Caldo brila ó verde brillante ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+276,"Caldo EC ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+277,"Caldo Giolitti y Cantoni ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+278,"Caldo GN (Gram Negativo) según Hajna",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+279,"Caldo lactosado ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+280,"Caldo lauril sulfato o lauril triptosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+281,"Caldo luria bertani",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+282,"Caldo MRVP ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+283,"Caldo nitrato",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+284,"Caldo nutritivo",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+285,"Caldo púrpura de bromocresol ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+286,"Caldo selenito f ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+287,"Caldo tetrationato ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+288,"Caldo tioglicolato ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+289,"Caldo tripticasa soya o TSB ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+290,"Caldo triptosa fosfato ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+291,"Carbon activado ",Gramo,"REACTIVOS QUIMICOS",1.00,3000.00,1.00
+292,"Carbonato de sodio anhidro",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+293,"Carboximetil celulosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+294,"Carmin ",Gramo,"REACTIVOS QUIMICOS",1.00,750.00,1.00
+295,Caseina,Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+296,"Citrato de amonio férrico ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+297,"Citrato de sodio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+298,"Cloroformo ",Litro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+299,"Cloruro de amonio - BF.SUNAT",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+300,"Cloruro de bario",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+301,"Cloruro de calcio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+302,"Cloruro de calcio anhidro ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+303,"Cloruro de magnesio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+304,"Cloruro de magnesio 6 aguas (mgcl2 2h2o)",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+305,"Cloruro de potasio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+306,"Cloruro de potasio (kcl)",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+307,"Cloruro de sodio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+308,"Cloruro férrico",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+309,"Creosota ",Mililitro,"REACTIVOS QUIMICOS",1.00,500.00,1.00
+310,"Cristal violeta ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+311,Diclorometano,Mililitro,"REACTIVOS QUIMICOS",1.00,250.00,1.00
+312,"DNASA ",Unidad,"REACTIVOS QUIMICOS",1.00,2.00,1.00
+313,"Dodecil sulfato de sodio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+314,"EDTA ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+315,"Enzima TAQ ADN polimerasa ( 5U/µl) ",Unidad,"REACTIVOS QUIMICOS",1.00,2.00,1.00
+316,"Eosina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+317,"Eritromicina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+318,"Extracto de carne ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+319,"Extracto de levadura ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+320,"Extracto de malta ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+321,"Fenilalanina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+322,"Fenol cristalizado / Ácido  fénico ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+323,"Fenolftaleína ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+324,"Fijador de bouin ",Mililitro,"REACTIVOS QUIMICOS",1.00,250.00,1.00
+325,"Formaldehido ",Mililitro,"REACTIVOS QUIMICOS",1.00,250.00,1.00
+326,"Formol ",Litro,"REACTIVOS QUIMICOS",1.00,10.00,1.00
+327,"Fosfato dibásico de potasio (k2hpo4) ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+328,"Fosfato dibásico de sodio hidratado (na2hpo4.12h2o) ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+329,"Fosfato monobásico de sodio (nah2po4)",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+330,Fructosa,Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+331,"Fucsina ácida ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+332,"Fucsina basica ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+333,"Furazolidona ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+334,"Galactosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+335,"Giemsa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+336,Glicerina,Litro,"REACTIVOS QUIMICOS",1.00,5.00,1.00
+337,"Glicina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+338,"Glucosa o dextrosa anhidra q.p. ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+339,"Hematoxilina ","Unidad x cristales","REACTIVOS QUIMICOS",1.00,10.00,1.00
+340,"Hepes ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+341,"Hidrato de cloral ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+342,"Hidroquinona ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+343,"Hidroxido de potasio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+344,"Histidina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+345,"Ioduro de potasio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+346,"Kits de análisis de nitritos",Kit,"REACTIVOS QUIMICOS",1.00,2.00,1.00
+347,"Kits de análisis de nitratos",Kit,"REACTIVOS QUIMICOS",1.00,2.00,1.00
+348,"Kits de análisis de amonio",Kit,"REACTIVOS QUIMICOS",1.00,2.00,1.00
+349,"Lactosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+350,"Lugol ",Mililitro,"REACTIVOS QUIMICOS",1.00,3000.00,1.00
+351,"Maltosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+352,"Manitol ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+353,"Medio esencial mínimo eagle ",Mililitro,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+354,Mercaptoetanol,Mililitro,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+355,Naftol,Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+356,"Nitrato de calcio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+357,"Nitrato de plata ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+358,"Nitrato de potasio",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+359,"Orceina ",Gramo,"REACTIVOS QUIMICOS",1.00,750.00,1.00
+360,"Oxalato de amonio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+361,"Oxido de mercurio rojo",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+362,Pancreatina,Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+363,"Para-dimetil amino benzaldehido ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+364,"Parafina liquida / vaselina líquida / aceite mineral ",Mililitro,"REACTIVOS QUIMICOS",1.00,3000.00,1.00
+365,"Parafina solida",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+366,"Peptona de carne ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+367,"Peptona de caseína ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+368,"Peptona de soya ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+369,"Permanganato de potasio - BF.SUNAT",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+370,"Piruvato de sodio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+371,"Prolina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+372,"Propanodiol ",Mililitro,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+373,"Rafinosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+374,"Reactivo de benedic",Mililitro,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+375,"Reactivo de kovacs (para indol) - BF.SUNAT",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+376,Ribosa,Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+377,"Rnasa ",Mililitro,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+378,"Rojo de alizarina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+379,"Rojo de congo",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+380,"Rojo de fenol ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+381,"Rojo de metilo ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+382,"Rojo neutro ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+383,"Rosa bengala",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+384,"Sacarosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+385,"Safranina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+386,"Sephadex ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+387,"Serina ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+388,"Silica gel 60 cromatografia",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+389,"Solución salina estéril ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+390,"Sucrosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+391,"Suero fetal de ternera",Mililitro,"REACTIVOS QUIMICOS",1.00,5000.00,1.00
+392,"Sulfato de amonio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+393,"Sulfato de cobre (h20) ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+394,"Sulfato de cobre heptahidratado",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+395,"Sulfato de cobre pentahidratado ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+396,"Sulfato de hierro ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+397,"Sulfato de magnesio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+398,"Sulfato de manganeso ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+399,"Sulfato de potasio anhidro ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+400,"Sulfato de zinc ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+401,"Sulfato ferroso ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+402,"Telurito de potasio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+403,"Temed ",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+404,"Tetraoxido de osmio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+405,Timina,Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+406,"Tripsina  DIFCO 1:250 ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+407,"Triptofano ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+408,"Triptona ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+409,"Tris base ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+410,"Triton ",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+411,"Trizol invitrogen cat15596026 ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+412,"Tween 20",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+413,"Tween 80 ",Mililitro,"REACTIVOS QUIMICOS",1.00,2000.00,1.00
+414,"Uracilo ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+415,"Verde de janus ",Gramo,"REACTIVOS QUIMICOS",1.00,750.00,1.00
+416,"Verde de malaquita ",Gramo,"REACTIVOS QUIMICOS",1.00,750.00,1.00
+417,"Verde de metilo ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+418,"Violeta de cresilo",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+419,"Violeta de genciana ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+420,"Xilosa ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00
+421,"Yoduro de potasio ",Gramo,"REACTIVOS QUIMICOS",1.00,1000.00,1.00

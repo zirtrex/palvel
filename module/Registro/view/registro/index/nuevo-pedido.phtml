@@ -1,0 +1,344 @@
+<?php
+use Admin\Model\Miscellanea;
+?>
+<div class="uk-container uk-container-expand uk-padding-small">
+
+	<div id="app">
+	
+		<p><span uk-icon="icon: reply"></span><a class="uk-button uk-button-link" href="<?= $this->url('docente', ['action' => 'ver-cursos',]) ?>">Volver</a></p>
+		
+		<div class="uk-grid-small" uk-grid>
+			<div class="uk-width-1-2@m">				
+        		
+        		<div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-4@m">
+                       	<p>Escuela: </p>
+                    </div>
+                    <div class="uk-width-expand@m">
+                    	<input class="uk-input" v-model="codEscuela" type="hidden" />
+                        <auto-complete :data="escuelas" field1="nombreEscuela" field2="codEscuela" placeholder="Ingrese la escuela" @newdata="handleData2($event)"></auto-complete>
+                    </div>
+                </div>                
+        		
+        		<div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-4@m">
+                       	<p>Curso: </p>
+                    </div>
+                    <div class="uk-width-expand@m">
+                    	<input class="uk-input" v-model="codCurso" type="hidden" />
+                        <auto-complete :data="cursos" field1="nombreCurso" field2="codCurso" placeholder="Ingrese el curso" @newdata="handleData1($event)"></auto-complete>
+                    </div>
+                </div>
+        	
+        		<div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-4@m">
+                       	<p>Semestre:</p>
+                    </div>
+                    <div class="uk-width-expand@m">
+                    	<select class="uk-select" v-model="semestre">
+                          <option disabled value="">Seleccione un semestre</option>
+                          <option>2020-1</option>
+                          <option>2020-2</option>
+                    	</select>
+                    </div>
+                </div>
+           </div>
+           <div class="uk-width-1-2@m">
+           		<h3>Pedido Adicional</h3>
+				<p>
+				Si dentro de sus requerimientos no se encuentra el nombre del elemento en este programa favor de mandar el formato Excel al correo <a href="mailto:graciela.thupa@unmsm.edu.pe">graciela.thupa@unmsm.edu.pe</a> Dudas consultas, teléfono 619-7000 // Anexo 1543. <br/><a class="uk-button uk-button-link" href="<?= $this->basePath('assets/FORMATO_PEDIDO_ADICIONAL_DOCENTE.xlsx');?>" target="_blank"><span uk-icon="icon: link"></span>Descargar el formato aquí.</a></p>
+            </div>
+        </div>
+        
+        <hr/>
+	
+		<div v-if="message1 != ''" id="success-message" class="uk-label-success uk-padding-small uk-margin-small">{{ message1 }}</div>
+
+   		<div v-if="message2 != ''" id="failed-message" class="uk-label-danger uk-padding-small uk-margin-small">{{ message2 }}</div>
+
+		<table class="uk-table uk-table-hover" v-if="codEscuela != 0 && codCurso != 0 && semestre != ''">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th width="40%">Nombre del pedido</th>
+					<th width="20">Cantidad</th>
+					<th width="auto"></th>
+					<th>Acciones</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="(quimico, index) in requerimientos" :key="quimico.id">
+					<td>{{ index + 1 }}</td>
+					
+					<td>
+						<input class="uk-input" v-model="quimico.codQuimico" type="hidden" />
+						<auto-complete :data="quimicos" field1="elemento" field2="codQuimico" field3="unidadMedida" placeholder="Ingrese el nombre del pedido" @newdata="handleData($event, index)"></auto-complete>
+					</td>
+					
+					<td>
+                        <input class="uk-input" v-model="quimico.cantidad" type="number" :min="quimico.min" :max="quimico.max" :step="quimico.intervalo"/>
+                    </td>
+                    
+                    <td>
+                        <div v-if="quimico.observacion == '1'"><input class="uk-input" v-model="quimico.detalleObservacion" type="text" /></div>
+                    </td>
+                    
+                    <td>
+                        <button class="uk-button uk-button-success"  v-if="requerimientos.length == index+1" @click="addRow(index)">Agregar</button>
+                        <button class="uk-button uk-button-danger"  @click="removeRow(index)">Quitar</button>
+                    </td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<div class="uk-alert-primary" uk-alert v-if="codEscuela == 0 || codCurso == 0 || semestre == ''">Seleccione: Escuela, Curso y Semestre</div>
+		
+		<button class="uk-button uk-button-secondary" @click="guardarPedidos" v-if="codEscuela != 0 && codCurso != 0 && semestre != ''">Guardar</button>
+		
+		<!--<pre>
+            {{ $data || json }}
+        </pre>  -->
+	</div>
+
+</div>
+
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="<?= $this->basePath('js/AutoComplete.js')?>"></script>
+
+<script type="text/javascript">
+
+new Vue({
+    el: '#app',
+    components: {
+  	  autoComplete: autoComplete
+  	},
+    data: {
+        message1 : "",
+        message2 : "",
+        semestre: "",
+        codEscuela: 0,
+        codDepartamento: 0,
+        codCurso: 0,
+        nombreCurso: "",        
+        escuelas: [],
+        departamentos: [],
+        cursos: [],
+		quimicos: [],
+		requerimientos: [
+    		{id: 0, codQuimico: 1, nombreQuimico: "", cantidad: 0, observacion: 0, detalleObservacion: '', min: 0, max: 0, intervalo: 0},
+        ]
+
+    },
+    created: function () {
+
+    	//var base = window.location.protocol + "//" + window.location.host + "/Rafael/Proyectos/Proyectos_Web/Palvel/public/";
+
+    	fetch(base + "docente/obtener-escuelas-ajax")
+			.then(data => data.json())
+			.then(json => this.escuelas = json);
+
+    	/*fetch(base + "docente/obtener-cursos-ajax/")
+    		.then(data => data.json())
+    		.then(json => this.cursos = json);*/
+
+    	fetch(base + "docente/obtener-quimicos-ajax")
+        	.then(data => data.json())
+        	.then(json => this.quimicos = json);
+
+    },
+    computed: {
+
+    },
+    methods: {
+    	addRow: function (index) {
+            try {
+				if(this.nombreCurso != ""){
+
+					var codQuimico = this.requerimientos[index].codQuimico;
+					var cantidad = parseFloat(this.requerimientos[index].cantidad);
+					
+					const resultado = this.quimicos.findIndex( quimico => quimico.codQuimico === codQuimico );
+
+					console.log(resultado);
+
+					if (cantidad >= parseFloat(this.requerimientos[index].min) && cantidad <= parseFloat(this.requerimientos[index].max)){
+						if(resultado != -1){
+							//Si el químico seleccionado existe lo removemos del listado de químicos
+							//this.quimicos.splice(resultado, 1);
+							//Y agregamos una nueva línea.
+							this.requerimientos.splice(index + 1, 0, { id: index + 1, codQuimico: 0, cantidad: 0, observacion: 0, detalleObservacion: '', min: 0, max: 0, intervalo: 0});
+						}else{
+							UIkit.notification({
+							    message: "Debe elegir un químico de la lista.",
+							    status: 'warning',
+							    pos: 'top-center',
+							    timeout: 3000
+							});	
+						}						
+					}else{
+						UIkit.notification({
+						    message: "La cantidad ingresada no es válida",
+						    status: 'warning',
+						    pos: 'top-center',
+						    timeout: 3000
+						});	
+					}				
+					
+				}else{
+					UIkit.notification({
+					    message: "Debe elegir un curso",
+					    status: 'warning',
+					    pos: 'top-center',
+					    timeout: 3000
+					});
+				}
+            } catch(e){
+                console.log(e);
+            }
+        },
+        
+        removeRow: function (index) {
+        	if(this.requerimientos.length > 1 || index != 0){
+            	
+            	var codQuimico = this.requerimientos[index].codQuimico;
+            	var elemento = this.requerimientos[index].elemento;
+
+            	if(codQuimico > 0){
+            		//this.quimicos.push({"codQuimico": codQuimico, "elemento": elemento});
+            	}
+
+            	this.requerimientos.splice(index, 1);
+        	}
+        },
+        
+        guardarPedidos: function () {
+        	
+            $.ajax({
+            	url: base + "docente/guardar-pedidos-ajax",
+            	type: "POST",
+                context: this,
+                data: {
+                	codEscuela: this.codEscuela,
+                	codCurso: this.codCurso,
+                    semestre: this.semestre,
+                    requerimientos: this.requerimientos
+                },                
+                dataType: "json",
+                cache: false,
+                success: function(data){
+                	
+                    if (data.response)
+                    {
+                    	console.log(data.response);
+                    	//this.message1 = "Datos agregados correctamente.";
+						var message = "Datos agregados correctamente. <br/> <br/><a class='uk-button uk-button-secondary' href='<?= $this->url('docente', ['action' => 'ver-cursos']) ?>'>Click aquí para ir al inicio</a>"
+                    	
+                    	UIkit.notification({
+    					    message: message,
+    					    status: 'success',
+    					    timeout: 20000
+    					});
+
+						setTimeout (()=>{
+							window.location="<?= $this->url('docente', ['action' => 'ver-cursos']); ?>";
+						}, 5000);
+                    }
+                    else
+                    {                  	
+                    	console.log(data.response);
+                        console.log(data.errorMessage);
+                        //this.message2 = data.errorMessage;
+                        UIkit.notification({
+    					    message: data.errorMessage,
+    					    status: 'danger',
+    					    timeout: 10000
+    					});
+                    }
+                },
+            });
+        },
+
+		obtenerCursos: function () {
+            
+        	//var base = window.location.protocol + "//" + window.location.host + "/Rafael/Proyectos/Proyectos_Web/Palvel/public/";
+        	
+            $.ajax({
+            	url: base + "docente/obtener-cursos-ajax",
+            	type: "POST",
+                context: this,
+                data: {
+                	codEscuela: this.codEscuela
+                },                
+                dataType: "json",
+                cache: false,
+                success: function(cursos){                                                      	
+                    if (cursos)
+                    {
+						this.cursos = cursos;
+                    }                    
+                },
+            });
+        },
+
+        handleData: function(e, index) {
+            [this.requerimientos[index].codQuimico, this.requerimientos[index].elemento, this.requerimientos[index].unidadMedida] = e;
+
+            const resultado = this.quimicos.find( quimico => quimico.codQuimico === this.requerimientos[index].codQuimico );			
+
+			if(resultado !== undefined){
+				//console.log(resultado);	
+				this.requerimientos[index].min = resultado.min;
+				this.requerimientos[index].max = resultado.max;
+				this.requerimientos[index].intervalo = resultado.intervalo;
+
+				var codQuimico = this.requerimientos[index].codQuimico;
+
+				if(codQuimico == 103 || codQuimico == 119 || codQuimico == 120){
+					this.requerimientos[index].observacion = 1;
+					this.requerimientos[index].detalleObservacion = 'Observaciones, especificar el número';
+				}else{
+					this.requerimientos[index].observacion = 0;
+					this.requerimientos[index].detalleObservacion = '';
+				}	
+
+				UIkit.notification({
+				    message: "El elemento: " + this.requerimientos[index].elemento + " acepta mínimo: " + resultado.min + ", máximo: " + resultado.max ,
+				    status: 'primary',
+				    pos: 'top-center',
+				    timeout: 10000
+				});	
+			}            
+            
+            [this.requerimientos[index].codCurso, this.requerimientos[index].nombreCurso] = [this.codCurso, this.nombreCurso];
+            
+            this.requerimientos[index].elementoFull = this.requerimientos[index].elemento + " (" + this.requerimientos[index].unidadMedida + ")";
+            
+            console.log(e);
+        },
+
+        handleData1: function(e) {
+            [this.codCurso, this.nombreCurso] = e;
+            //[this.requerimientos[index].codCurso, this.requerimientos[index].nombreCurso] = e;
+            console.log(e);
+        },
+
+        handleData2: function(e) {
+            var nombreEscuela = "";
+            [this.codEscuela, nombreEscuela] = e;
+            //[this.requerimientos[index].codCurso, this.requerimientos[index].nombreCurso] = e;
+            console.log(e);
+            this.obtenerCursos();
+        },
+        
+        handleData3: function(e) {
+            var nombreDepartamento = "";
+            [this.codDepartamento, nombreDepartamento] = e;
+            //[this.requerimientos[index].codCurso, this.requerimientos[index].nombreCurso] = e;
+            console.log(e);
+        }
+    }
+});
+</script>
+
+

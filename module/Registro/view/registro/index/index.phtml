@@ -1,0 +1,42 @@
+<?php 
+	$this->layout()->setVariable('titulo', 'Pedidos');	
+	//$this->layout()->setVariable('subtitulo', 'Puede visualizar sus cursos en esta ventana');
+?>
+<div class="uk-container uk-container-expand uk-padding-small">
+    <div class="uk-grid-large" uk-grid>
+    
+    	<div class="uk-width-1-2@l">
+            <div class="uk-text-center">
+                <a href="<?= $this->url('docente', ['action' => 'ver-cursos']) ?>">    
+                    <img style="text-align: center" class="uk-border-circle" src="<?= $this->basePath('img/ver-pedidos.jpg') ?>" width="300" class="uk-box-shadow-large" alt="">    
+            	</a>
+            </div>
+            <div class="uk-text-center">
+                <h2><a href="<?= $this->url('docente', ['action' => 'ver-cursos']) ?>">Ver Pedidos</a></h2>
+                <p>Encuentra los pedidos que has realizado por cada curso</p>
+            </div>
+        </div>
+        
+        <div class="uk-width-1-2@l"> 
+        	<div class="uk-text-center">
+                <a href="<?= $this->url('docente', ['action' => 'nuevo-pedido']) ?>">
+                    <img style="text-align: center" class="uk-border-circle" src="<?= $this->basePath('img/nuevo_pedido.jpg') ?>" width="250" class="uk-box-shadow-large" alt="">    
+            	</a>
+            </div>
+            <div class="uk-text-center">
+                <h2><a href="<?= $this->url('docente', ['action' => 'nuevo-pedido']) ?>">Nuevo Pedido</a></h2>
+                <p>Agrega un nuevo pedido.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="uk-text-center" style="">
+    	<h3>Recursos a tener en cuenta:</h3>
+    	<ul class="uk-list">
+    		<li><a href="<?= $this->basePath('assets/materiales.pdf') ?>" target="_blank">Materiales de laboratorio</a></li>
+    		<li><a href="<?= $this->basePath('assets/reactivos.pdf') ?>" target="_blank">Reactivos químicos</a></li>
+    		<li><a href="<?= $this->basePath('assets/cursos.pdf') ?>" target="_blank">Cursos</a></li>
+    		<li><a href="<?= $this->basePath('assets/FORMATO_PEDIDO_ADICIONAL_DOCENTE.xlsx') ?>" target="_blank">Formato de requerimientos adicionales</a></li>
+    	</ul>
+    </div>
+</div>

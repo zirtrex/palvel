@@ -1,0 +1,435 @@
+<?php
+use Admin\Model\Miscellanea;
+?>
+<div class="uk-container uk-container-expand uk-padding-small">    
+
+	<div id="app">
+    	<div uk-grid>
+            <div class="uk-width-2-3@m">
+            	<p><span uk-icon="icon: reply"></span>
+            		<a  href="<?php echo $this->url('docente', [
+    	        	    'action'    => 'ver-pedidos',
+                        'semestre'  => $this->semestre,
+    	        	    'codescuela'  => $this->codEscuela,
+    					'codcurso'  => $this->codCurso
+    				]); ?>" class="uk-button uk-button-link">Volver</a></p>
+	    
+	    		<p>
+	    			Semestre: <strong>{{ semestre }}</strong> --- 
+	    			Escuela: <strong>{{ escuela }}</strong> --- 
+    				Curso: <strong>{{nombreCurso}} ({{ codCurso }})</strong>
+    			</p>
+    			
+    		</div>
+            <div class="uk-width-1-3@m">
+            	<h4>Ayuda</h4>
+            	<p>A continuación se muestran todos los pedidos del curso seleccionado, solo puede cambiar la cantidad. Recuerde <strong>Guardar</strong> si ha realizado algún cambio.</p>
+            </div>
+        </div>
+		<hr/>
+		
+		<table class="uk-table uk-table-hover">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th width="40%">Químico</th>
+					<th width="20">Cantidad</th>
+					<th width="auto"></th>
+					<th>Acciones</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="(quimico, index) in requerimientos" v-bind:id="index" :key="quimico.codQuimico">
+					<td>{{ index + 1 }}</td>
+					
+					<td>
+						<input class="uk-input" v-model="quimico.codQuimico" type="hidden" value="0" number v-on:input="isEdit(index, $event)"/>
+						<auto-complete v-if="quimico.isNew" :data="quimicos" field1="elemento" field2="codQuimico" field3="unidadMedida" v-bind:field1select="quimico.elemento" v-bind:field2select="quimico.codQuimico" @newdata="handleData($event, index)"></auto-complete>
+						<input v-else class="uk-input" v-model="quimico.elementoFull" type="text"  disabled="disabled"/>        						
+					</td>
+					
+					<td>
+                        <input class="uk-input" v-model="quimico.cantidad" type="number" :min="quimico.min" :max="quimico.max" :step="quimico.intervalo"/>
+                    </td>
+                    
+                    <td>
+                        <div v-if="quimico.observacion == '1'"><input class="uk-input" v-model="quimico.detalleObservacion" type="text" /></div>
+                    </td>
+                    
+                    <td>
+                    	<button class="uk-button uk-button-blue"  @click="guardar(index)">Guardar</button>                        
+                        <button class="uk-button uk-button-danger"  @click="remover(index)">Quitar</button>
+                        <button class="uk-button uk-button-success" v-if="requerimientos.length == index +1 " @click="agregar(index)">Agregar</button>
+                    </td>
+				</tr>
+			</tbody>
+		</table>	
+	
+		<!--  <pre>
+            {{ $data.requerimientos || json }}
+        </pre>    -->
+        
+        <p><a  href="<?php echo $this->url('docente', [
+        	    'action'    => 'ver-cursos',
+                'semestre'  => $this->semestre,
+        	    'codescuela'  => $this->codEscuela,
+    			'codcurso'  => $this->codCurso
+    		]); ?>" class="uk-button uk-button-default uk-button-large">Volver a mis cursos</a></p>
+
+	</div>
+
+</div>
+
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script type="text/javascript">
+
+Vue.component('auto-complete', {
+	template: `
+  	<div class="auto-complete">
+		<input class="uk-input" type="hidden" v-model="codigo">
+		<input class="uk-input" type="hidden" v-model="unidadMedida">
+   		<input class="uk-input" type="text" v-model="input" @keydown.tab.prevent="complete()" @focus="focus(true)" @blur="focus(false)">
+		<ul v-if="focused" class="uk-list uk-list-divider uk-list-striped">
+         	<li v-for="(person, i) in data" v-if="filter(person)" @mousedown="complete(i)">
+      	      <p>{{ person[field1] }} ({{ person[field3] || '' }})</p>
+    	    </li>
+    	 </ul>
+	</div>`,
+  
+	props: {
+	  codigoin: { type: String, required: false},
+      value: { type: String, required: false},
+      data:  { type: Array, required: true},
+      field1: { type: String, required: true},
+      field1select: { type: String, required: false},
+      field2: { type: String, required: true},
+      field2select: { type: String, required: false},
+      field3: { type: String, required: false}
+  },
+  
+  methods: {
+       complete(i) {
+       		 if (i == undefined) {
+           	   for (let row of this.data) {
+            			if (this.filter(row)) {
+                    this.select(row)
+                    return
+                  }
+               }
+           }           
+           
+           this.select(this.data[i])
+       },
+       
+       select(row) {
+			this.input = row[this.field1] + " (" + row[this.field3] + ")"
+          	this.codigo = row[this.field2]
+			this.unidadMedida = row[this.field3]
+          	this.selected = true
+          	this.$emit('newdata', [this.codigo, this.input, this.unidadMedida]);
+       },
+       
+       filter(row) {
+       		return row[this.field1].toLowerCase().indexOf(this.input.toLowerCase()) != -1
+       },
+       
+       focus(f) {
+       		this.focused = f
+       }
+  },
+  
+  data() {
+       return {
+           	codigo: 0,
+           	input: '',
+			unidadMedida: '',
+           	focused: false,
+       }
+  },
+
+  created() {
+	  	this.input = this.field1select || ''
+       	this.unidadMedida = this.field3 || '',
+       	this.codigo = this.field2select || ''
+  },
+
+  watch: {
+  	input: {
+    	handler: function() {
+    		if(this.input == 0) this.$emit('newdata', [0, '', '']);
+      	},
+    	deep: true
+    }
+  }
+});
+
+</script>
+
+
+<script type="text/javascript">
+
+new Vue({
+    el: '#app',
+    data: {
+        message1 : "",
+        message2 : "",
+        codUsuario: <?= $this->docente->codUsuario; ?>,
+		semestre: "<?= $this->semestre; ?>",
+        codEscuela: <?= $this->codEscuela; ?>,
+        escuela: "<?= $this->escuela->nombreEscuela; ?>",
+        codCurso: <?= $this->curso->codCurso; ?>,
+       	nombreCurso: "<?= $this->curso->nombreCurso; ?>",
+    	requerimientos: <?= $this->requerimientos;?>,
+    	requerimientosBack: [],
+		quimicos: [],
+
+    },
+    mounted() {
+
+ 	   this.requerimientosBack = this.requerimientos.map(a => Object.assign({}, a));
+ 	   
+ 	},
+    created: function () {
+
+    	//var base = window.location.protocol + "//" + window.location.host + "/Rafael/Proyectos/Proyectos_Web/Palvel/public/";
+
+    	fetch(base + "docente/obtener-quimicos-ajax")
+        	.then(data => data.json())
+        	.then(json => this.quimicos = json);    	
+
+    },
+    computed: {
+
+    },
+    methods: {
+    	agregar: function (index) {
+            try {
+            	if(this.requerimientos[index].elemento != ""){
+                	this.requerimientos.splice(index + 1, 0, { codQuimico: 0, elemento: '', cantidad: 0, observacion: 0, detalleObservacion: '', min: 0, max: 0, intervalo: 0, 'isNew': true, });
+                	this.requerimientosBack.splice(index + 1, 0, { codQuimico: 0, elemento: '', cantidad: 0, observacion: 0, detalleObservacion: '', min: 0, max: 0, intervalo: 0, 'isNew': true});
+    
+    				var codQuimico = this.requerimientos[index].codQuimico;
+    				
+    				const resultado = this.quimicos.findIndex( quimico => quimico.codQuimico === codQuimico );
+    
+    				console.log(resultado);
+    
+    				if(resultado != -1){
+    					//this.quimicos.splice(resultado, 1);
+    				}
+            	}else{
+					//this.message2 = "El elemento actual está vacío, completelo primero.";
+
+					UIkit.notification({
+					    message: "El elemento actual está vacío, completelo primero.",
+					    status: 'warning',
+					    pos: 'top-center',
+					    timeout: 3000
+					});
+                }
+				
+            } catch(e){
+                console.log(e);
+            }
+        },
+
+        guardar: function (index) {
+            try {            	
+
+        		var codQuimico = this.requerimientos[index].codQuimico;
+				var cantidad = parseFloat(this.requerimientos[index].cantidad);
+
+				const resultado = this.quimicos.findIndex( quimico => quimico.codQuimico === codQuimico );
+
+				if (cantidad >= parseFloat(this.requerimientos[index].min) && cantidad <= parseFloat(this.requerimientos[index].max)){
+					if(resultado != -1){
+
+						var pedido = {
+								'semestre': this.semestre,
+								'codEscuela': this.codEscuela,
+								'codDepartamento': this.codDepartamento,
+	                			'codCurso': this.codCurso,
+	                        	'codQuimico': codQuimico,
+	                        	'elemento': this.requerimientos[index].nombreQuimico,
+	                        	'cantidad': cantidad,
+	                        	'observacion': this.requerimientos[index].observacion,
+	                        	'detalleObservacion': this.requerimientos[index].detalleObservacion,
+	                    };
+
+						if(this.requerimientos[index].isEdit && !this.requerimientos[index].isNew){
+	                    	this.actualizarRequerimiento(pedido, index, "editar");	
+	                    }
+	                    else if(this.requerimientos[index].isNew){
+	                    	this.actualizarRequerimiento(pedido, index, "agregar");
+	                    } 	
+						
+					}else{
+						UIkit.notification({
+						    message: "Debe elegir un químico de la lista.",
+						    status: 'warning',
+						    pos: 'top-center',
+						    timeout: 3000
+						});	
+					}						
+				}else{
+					UIkit.notification({
+					    message: "La cantidad ingresada no es válida",
+					    status: 'warning',
+					    pos: 'top-center',
+					    timeout: 3000
+					});	
+				}              
+				
+            } catch(e){
+                console.log(e);
+            }
+        },             
+
+        remover: function (index) {
+        	if(this.requerimientos.length > 1){
+
+            	var pedido = {
+						'semestre': this.semestre,
+						'codEscuela': this.codEscuela,
+						'codDepartamento': this.codDepartamento,
+            			'codCurso': this.codCurso,
+                    	'codQuimico': this.requerimientos[index].codQuimico
+                };
+
+            	if(!this.requerimientos[index].isNew){
+
+            		this.actualizarRequerimiento(pedido, index, "remover")
+               	
+            	}
+
+        	}else{
+        		UIkit.notification({
+				    message: "El pedido debe tener al menos un elemento",
+				    status: 'danger',
+				    pos: 'top-center',
+				    timeout: 5000
+				});
+           	}
+        },
+
+		actualizarRequerimiento: function (requerimiento, index, opcion = "agregar") {
+
+        	switch (opcion) {
+    			case "agregar":
+    				var url = "docente/agregar-pedido-ajax";
+    				break;
+    			case "editar":
+    				var url = "docente/actualizar-pedido-ajax";
+    				break;
+    			default:
+    				var url = "docente/remover-pedido-ajax";
+    				break;
+			}
+
+        	var self = this;
+        	
+            $.ajax({
+            	url: base + url,
+            	type: "POST",
+                context: this,
+                data: {
+                    pedido: requerimiento,
+                },                
+                dataType: "json",
+                cache: false,
+                success: function(data){
+                	
+                    if (data.response)
+                    {
+                    	console.log(data.response);
+                    	console.log(data.successMessage);
+                    	//self.message1 = data.successMessage;
+                    	self.requerimientos[index].isEdit = true;
+						self.requerimientos[index].isNew = false;
+						self.requerimientos[index].elementoFull = self.requerimientos[index].elemento + " (" + self.requerimientos[index].unidadMedida + ")";
+                    	if(opcion == "remover"){
+                    		self.requerimientos.splice(index, 1);
+                    		self.requerimientosBack.splice(index, 1);
+                        }
+                    	UIkit.notification({
+    					    message: data.successMessage,
+    					    status: 'success',
+    					    pos: 'top-center',
+    					    timeout: 5000
+    					});
+                    }
+                    else
+                    {
+                    	console.log(data.response);
+                        console.log(data.errorMessage);
+                        //self.message2 = data.errorMessage;
+                        self.requerimientos[index].isEdit = false;
+                        UIkit.notification({
+    					    message: data.errorMessage,
+    					    status: 'danger',
+    					    pos: 'top-center',
+    					    timeout: 5000
+    					});
+                    }
+                },
+            });
+
+        },
+
+        handleData: function(e, index) {
+            [this.requerimientos[index].codQuimico, this.requerimientos[index].elemento, this.requerimientos[index].unidadMedida] = e;
+
+            const resultado = this.quimicos.find( quimico => quimico.codQuimico === this.requerimientos[index].codQuimico );			
+
+			if(resultado !== undefined){
+				//console.log(resultado);	
+				this.requerimientos[index].min = resultado.min;
+				this.requerimientos[index].max = resultado.max;
+				this.requerimientos[index].intervalo = resultado.intervalo;
+
+				var codQuimico = this.requerimientos[index].codQuimico;
+
+				if(codQuimico == 103 || codQuimico == 119 || codQuimico == 120){
+					this.requerimientos[index].observacion = 1;
+				}else{
+					this.requerimientos[index].observacion = 0;
+				}
+
+				UIkit.notification({
+				    message: "El elemento: " + this.requerimientos[index].elemento + " acepta mínimo: " + resultado.min + ", máximo: " + resultado.max ,
+				    status: 'primary',
+				    pos: 'top-center',
+				    timeout: 10000
+				});	
+			}  
+            //console.log(e);
+            //console.log(index);
+       	},
+       	
+        
+    },
+    watch: {    	
+    	requerimientos: {    		
+    		handler: function (val, oldVal) {
+    			var vm = this;
+    			val.filter( function( p, idx ) {
+    		    	return Object.keys(p).some( function( prop ) {        		    
+    		      		var diff = p[prop] !== vm.requerimientosBack[idx][prop];
+        		        if(diff) {
+        		        	p.isEdit = true;
+        		          	vm.requerimientosBack[idx][prop] = p[prop];
+        		        }
+    		      	});
+    		   	});
+    	    },
+    	    deep: true            
+    	}	
+   	}
+});
+
+
+</script>
+
+
