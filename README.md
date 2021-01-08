@@ -8,8 +8,6 @@ Proyecto para el registro de pedidos de quimicos para la Facultad de Ciencias Bi
 
 Puedes ver la aplicación en [zirtrex.net/palvel](http://zirtrex.net/palvel/public).
 
-To create your new Zend Framework project:
-
 ```bash
 $ 
 ```
