@@ -1,0 +1,30 @@
+﻿
+.modal-footer {
+    padding: 5px !important; 
+}
+
+.cerrar {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.titulo {
+    font-size: 20px !important;
+    float: left;
+    color: #000;
+}
+
+.sweet-alert h2 { 
+     font-weight: 300 !important;  
+}
+
+.modal-dialog {
+    margin-top: 100px !important;
+}
+
+.legend-modal {
+    color: #000;
+    font-family: Gothic Bold;
+    font-size: 15px;
+}
+ 

@@ -1,0 +1,136 @@
+﻿
+.e-grid .e-frozencontent table tr td:first-child:empty, .e-grid .e-movablecontent table tr td:first-child:empty, .e-grid .e-frozenhdrcont table tr td:first-child:empty, .e-grid:not(.e-grid-min-height) .e-gridcontent tr td:not(.e-indentcell):first-child:empty, .e-grid:not(.e-grid-min-height) .e-gridcontent tr.e-row .e-rowcell:empty {
+    height: auto !important;
+}
+
+.e-btn {
+    font-size: 11px !important;
+    text-transform: none !important;
+    padding: 6px !important;
+}
+
+.e-grid td.e-active, e-rowcell e-active {
+    color: #000 !important;
+    background-color: #29b4e026;
+}
+
+.e-row:hover span, .e-row:hover .e-rowcell { 
+    background-color: #29b4e026 !important;
+    color: #000 !important;
+}
+
+.e-treegrid .e-treecolumn-container span {
+    /*color: #000;*/
+}
+
+.e-rowcell {
+    font-size: 11px !important;
+}
+
+
+.e-grid.e-wrap .e-rowcell {
+    line-height: 1.42857143 !important;
+    font-family: Open Sans;
+    opacity: 1 !important;
+}
+
+.e-grid .e-headercell.Azul {
+    background-color: #759cf2;
+    color: #fff;
+}
+
+.e-headercell.e-stackedheadercell.Morado_c, th.e-headercell.Morado_c.e-mousepointer {
+    background-color: #759cf2 !important;
+    color: #fff;
+}
+
+.e-grid .e-headercell.Blanco {
+    background-color: #fff;
+    color: #fff;
+}
+
+.e-grid .e-headercell.Gris {
+    background-color: #b3b3b3;
+    color: #fff;
+}
+
+.e-grid .e-headercell.Morado {
+    background-color: #576cd3;
+    color: #fff;
+}
+
+
+.e-grid .e-headercell.Celeste {
+    background-color: #00dbf2 !important;
+    color: #fff;
+}
+
+.e-grid .e-headercell.Plomo {
+    background-color: #808080 !important;
+    color: #fff;
+}
+
+.e-grid .e-headercell.Verde {
+    background-color: #92d050;
+    color: #fff;
+}
+
+.e-grid .e-stackedheadercelldiv {
+    color: #fff;
+}
+.e-grid .e-headercell {
+   
+    height: 33px !important;
+}
+
+.e-headertext, .e-stackedheadercelldiv {
+    font-size: 13px !important;
+}
+
+.e-rowcell {
+    font-size: 10px !important;
+}
+
+.e-summarycell {
+    font-size: 10px !important;
+}
+
+.e-headercell e-stackedheadercell > e-stackedheadercelldiv {
+    background: #fff;
+}
+
+.e-grid .e-summaryrow .e-summarycell, .e-grid .e-summaryrow .e-templatecell, .e-grid .e-summarycontent .e-indentcell, .e-grid .e-indentcell.e-detailindentcelltop {
+    background-color: #759cf2 !important;
+}
+
+.e-grid .e-gridfooter {
+    background-color: #759cf2 !important;
+}
+
+.e-gridfooter .e-footerpadding table {
+    border-color: #759cf2 !important;
+}
+
+.input-group-addon {
+    background-color: #566cd2;
+}
+
+.e-grid .e-headercell.Azul {
+    background-color: #566cd2;
+    color: #fff;
+}
+
+.e-headertext > span-head-table {
+    color: white;
+}
+span.span-head-table{
+    color:white !important;
+}
+
+
+
+
+/** {
+    font-family: MyFont;
+    src: Url(~/assets/fonts/Gothic-bold.otf)
+}*/

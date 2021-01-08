@@ -1,0 +1,249 @@
+﻿ 
+
+.btn-primary-filtro.active {
+    background-color: #29b4e0;
+    border-color: #29b4e0;
+    color: white !important;
+    box-shadow: none;
+}
+
+.e-edit {
+    color: #4472c4 !important;
+}
+.e-delete {
+    color: red !important;
+}
+
+.btn-warning[disabled], .btn-warning[disabled]:hover {
+    background-color: #29ace0 !important;
+    border-color: #29ace0 !important;
+}
+.btn-warning {
+    background-color: #29ace0;
+    border-color: #29ace0;
+    color: #FFFFFF;
+}
+.btn-warning:hover {
+    background-color: #29ace0;
+    border-color: #29ace0;
+    color: #FFFFFF;
+}
+
+.sweet-alert button {
+    background-color: #29b4e0!important;
+    box-shadow: none !important;
+}
+    .sweet-alert button.cancel {
+        background-color: #D0D0D0 !important;
+    }
+.btn-primary {
+    background-color: #29b4e0;
+    border-color: #29b4e0;
+}
+.btn-add {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 999;
+    margin: 16px;
+    padding: 5px;
+}
+/*.btn-success {
+    float: right;
+    background-color: #29b4e0;
+    border-color: #29b4e0;
+    color: #FFFFFF;
+}*/
+
+.btn-success {
+    float: right;
+    background-color: #576cd3;
+    border-color: #576cd3;
+    color: #FFFFFF;
+}
+
+.btn-nivel {
+    font-size: 11px;
+    padding: 5px;
+}
+
+.btn-primary, .btn-primary, .btn-primary {
+}
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:hover, .btn-primary.active:focus {
+        background-color: #23a3cb;
+        border-color: #23a3cb;
+        box-shadow: none;
+    }
+
+.btn-primary {
+    background-color: #29b4e0;
+    border-color: #29b4e0;
+    color: #FFFFFF;
+}
+    /*.btn-primary:hover {
+        background-color: #29ace0d4 !important;
+    }*/
+.btn-primary-white {
+    border-color: #576cd3;
+    background: white;
+    color: black;
+    border: none;
+}
+.btn-primary-white:hover {
+    background: #f6f6f652;
+    color: black;
+}
+.btnfiltro span {
+    /* width: 100px; */
+    display: inline-block;
+    width: calc(100% - 105px);
+    word-break: break-all;
+    overflow-wrap: unset;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.btnfiltro i {
+    display: inline-block;
+    background-image: url(../img/icons/in_the_market-01.png);
+    width: 70px;
+    height: 65px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+button[data-general="Inicio"].btnfiltro.active i {
+    background-image: url(../img/icons/in_the_market-01-hover.png);
+}
+
+/*======== BOTONES INICIO ==================*/
+button[data-general="RouteToMarket"].btnfiltro i {
+    background-image: url(../img/icons/route_to-01.png);
+}
+
+button[data-general="RouteToMarket"].btnfiltro.active i {
+    background-image: url(../img/icons/route_to-01-hover.png);
+}
+
+button[data-general="Zona"].btnfiltro i {
+    background-image: url(../img/icons/zona-01-01.png);
+}
+
+button[data-general="Zona"].btnfiltro.active i {
+    background-image: url(../img/icons/zona-01-01-hover.png);
+}
+
+
+button[data-general="Inicio"].btnfiltro.active {
+    background-color: #29ace0;
+    border-color: #29ace0;
+    box-shadow: none;
+}
+
+    button[data-general="Inicio"].btnfiltro.active:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        width: 60px;
+        height: 5px;
+        margin: 0 auto;
+        left: calc(50% - 30px);
+        border-radius: 10px;
+        background-color: #29ace0;
+    }
+
+button[data-general="RouteToMarket"].btnfiltro.active {
+    background: #ffa52e;
+    border-color: #ffa52e;
+    box-shadow: none;
+    color: #fff;
+}
+
+    button[data-general="RouteToMarket"].btnfiltro.active:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        width: 60px;
+        height: 5px;
+        margin: 0 auto;
+        left: calc(50% - 30px);
+        border-radius: 10px;
+        background-color: #ffa52e;
+    }
+
+button[data-general="RouteToMarket"].btnfiltro {
+    color: #ffc241;
+}
+
+button[data-general="Zona"].btnfiltro.active {
+    background: #2acae4;
+    border-color: #2acae4;
+    box-shadow: none;
+    color: #fff;
+}
+
+button[data-general="Zona"].btnfiltro {
+    color: #2acae4;
+}
+
+    button[data-general="Zona"].btnfiltro.active:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        width: 60px;
+        height: 5px;
+        margin: 0 auto;
+        left: calc(50% - 30px);
+        border-radius: 10px;
+        background-color: #2acae4;
+    }
+
+
+
+/*======== OTRO ==================*/
+
+.btnfiltro, .btnfiltro:hover {
+    width: 300px;
+    max-width: calc(100% / 3);
+    height: 100px;
+    border-color: transparent;
+    border-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    font-weight: bold;
+    font-family: Antipasto Bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    float: none !important;
+    vertical-align: baseline;
+}
+
+.btn_ExportaExcel {
+    float: right;
+}
+
+.btn_ExportaExcel:before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 18px;
+    background-image: url(../img/icons/exportar-01.png);
+    background-size: cover;
+    vertical-align: text-bottom;
+}
+
+
+.btn-primary.btn-outline {
+    color: #fff;
+    background-color: #29b4e0;
+    border-color: #29b4e0;
+}
+
+.btnTipo {
+    padding: 4px 10px !important;
+}

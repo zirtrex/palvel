@@ -1,5 +1,5 @@
 //var base = window.location.protocol + "//" + window.location.host + "/palvel/public/";
-var base = window.location.protocol + "//" + window.location.host + "/Rafael/Proyectos/Proyectos_Web/Palvel/public/";
+var base = window.location.protocol + "//" + window.location.host + "/";
 
 $(document).ready(function () {	
 
