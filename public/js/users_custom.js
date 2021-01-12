@@ -1,5 +1,5 @@
-//var base = window.location.protocol + "//" + window.location.host + "/palvel/public/";
-var base = window.location.protocol + "//" + window.location.host + "/";
+var base = window.location.protocol + "//" + window.location.host + "/palvel/public/";
+//var base = window.location.protocol + "//" + window.location.host + "/";
 
 $(document).ready(function () {	
 

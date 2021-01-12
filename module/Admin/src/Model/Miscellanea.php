@@ -4,7 +4,7 @@ namespace Admin\Model;
 class Miscellanea
 {
     //En enero de 2020 se cambio a pedir 2 semestres por año, por ello solo pongo año y no 2020-1 o 2020-2
-    const SEMESTRE = '2020';
+    const SEMESTRE = '2021';
     
     public static function getHoraLocal($zona_horaria = 0)
     {
